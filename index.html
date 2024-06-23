@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+	<body style="background-color: #c6d82e;">
+		<h1>Grocery Store</h1>
+
+		<hr>
+
+		<!-- Department Selection Area -->
+		<h3>Department</h3>
+		<div id="radioButtons" style="border: 1px solid black; padding: 5px; background-color: #ffffff;">
+			<p>
+				<input type="radio" id="rbProduce" name="department" value="Produce" onclick="displayProducts();">
+				Produce
+			</p>
+			<p>
+				<input type="radio" id="rbBakery" name="department" value="Bakery" onclick="displayProducts();">
+				Bakery
+			</p>
+			<p>
+				<input type="radio" id="rbMeat" name="department" value="Meats" onclick="displayProducts();">
+				Meats
+			</p>
+			<p>
+				<input type="radio" id="rbCheese" name="department" value="Cheese" onclick="displayProducts();">
+				Cheese
+			</p>
+
+		</div>
+
+		<hr>
+
+		<!-- Product Output Area -->
+		<h3>Products Available</h3>
+		<div id="productOutput" style="border: 1px solid black; padding: 5px; background-color: #ffffff; overflow:auto;">[Select a Department]</div>
+
+		<!-- Add Product to Department -->
+		<p>Add Product:
+			<input type="text" id="product">
+			<input type="button" value="Add Product" onclick="addProduct();">
+		</p>
+
+		<hr>
+
+		<!-- Product Selection Field -->
+		<h3>Shopping Cart</h3>
+
+		<p>Add Item #
+			<select id="itemNumDropdown"><option selected>Select Department</option></select>
+			 to Cart:
+			<input type="button" value="Add to Cart" onclick="addItemToCart();" disabled id="addToCart" >
+		</p>
+		<p>Remove item from cart:
+			<input type="text" id="tb_remove">
+			<input type="button" value="Remove" onclick="removeItem();">
+		</p>
+
+		<!-- Product Output Area -->
+		<div id="cartOutput" style="border: 1px solid black; padding: 5px; background-color: #ffffff; overflow: auto;">[Add an Item to Cart]</div>
+
+		<!-- Javascript -->
+		<script>
+
+		</script>
+	</body>
+</html>
